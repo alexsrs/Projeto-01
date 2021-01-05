@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/** Boot CSS **/
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.w50{
+	width: 50%;
+}
+
+.w33{
+	width: 33.3%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+
+/** Estilização do site **/
+
+header{
+	padding: 20px 0;
+	background: #183153;
+}
+
+header .logo{
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+.mobile{
+	display: none;
+}
+
+nav.desktop ul{
+	position: relative;
+	top: 6px;
+	list-style-type: none;
+}
+
+nav.desktop li{
+	font-size: 15px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+nav.desktop a{
+	color: white;
+	text-decoration: none;
+}
+
+section.banner-principal{
+	width: 100%;
+	height: 600px;
+	background-image: url('../images/bg-form.jpg');
+	background-size: cover;
+	position: relative;
+
+}
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(51,51,51,0.6);
+}
+
+section.banner-principal form{
+	width: 98%;
+	max-width: 500px;
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+section.banner-principal form h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+}
+
+section.banner-principal form input[type=email]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: white;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+
+}
