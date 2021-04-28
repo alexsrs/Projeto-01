@@ -64,35 +64,40 @@
 			<h2 class="title">Especialidades</h2>
 			<div class="box-especialidade w33 left">
 				<h3><i class="fab fa-css3"></i></h3>
-				<h3>CSS3</h3>
+				<h4>CSS3</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus.</p>
 			</div><!-- box-especialidade -->
 			<div class="box-especialidade w33 left">
 				<h3><i class="fab fa-html5"></i></h3>
-				<h3>HTML5</h3>
+				<h4>HTML5</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus.</p>
 			</div><!-- box-especialidade -->
 			<div class="box-especialidade w33 left">
 				<h3><i class="fab fa-js-square"></i></h3>
-				<h3>JavaScript</h3>
+				<h4>JavaScript</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus.</p>
 			</div><!-- box-especialidade -->
+			<div class="clear"></div><!--clear-->
 		</div><!-- center -->
 	</section><!-- especialidades -->
 	<section class="extras">
 		<div class="center">
-			<div class="w50 left">
-				<h2 class="title">Depoimentos</h2>
+			<div class="w50 left depoimentos-container">
+				<h2 class="title">Depoimentos dos nossos clientes</h2>
 					<div class="depoimento-single">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus.</p>
+						<p class="depoimento-descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus."</p>
 						<p class="nome-autor">Lorem ipsum dolor</p>
 					</div><!-- depoimento-single -->
 					<div class="depoimento-single">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus.</p>
+						<p class="depoimento-descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus."</p>
+						<p class="nome-autor">Lorem ipsum dolor</p>
+					</div><!-- depoimento-single -->
+					<div class="depoimento-single">
+						<p class="depoimento-descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus."</p>
 						<p class="nome-autor">Lorem ipsum dolor</p>
 					</div><!-- depoimento-single -->
 			</div><!-- w50 -->
-			<div class="w50 left">
+			<div class="w50 left servicos-container">
 				<h2 class="title">Serviços</h2>
 				<div class="servicos">
 					<ul>
@@ -108,7 +113,7 @@
 	</section><!-- extras -->
 	<footer>
 		<div class="center">
-			<p>Todos os direitos reservados</p>
+			<p>SOLID FIT - Todos os direitos reservados</p>
 		</div><!-- center -->	
 	</footer>
 </body>
