@@ -113,8 +113,9 @@
 	</section><!-- extras -->
 	<footer>
 		<div class="center">
-			<p>SOLID FIT - Todos os direitos reservados</p>
+			<p>Solid Fit - Todos os direitos reservados</p>
 		</div><!-- center -->	
 	</footer>
+	<script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>

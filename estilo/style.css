@@ -76,6 +76,10 @@ nav.desktop a{
 	text-decoration: none;
 }
 
+nav.desktop a:hover{
+	text-decoration: underline;
+}
+
 section.banner-principal{
 	width: 100%;
 	height: 600px;
