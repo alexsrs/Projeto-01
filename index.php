@@ -15,7 +15,7 @@
 <body>
 	<header>
 		<div class="center">
-			<div class="logo left">Solid FIT</div><!-- logo -->
+			<div class="logo left"><a href="/">Solid FIT</a></div><!-- logo -->
 			<nav class="desktop right">
 				<ul>
 					<li><a href="">Home</a></li>
@@ -116,6 +116,7 @@
 			<p>Solid Fit - Todos os direitos reservados</p>
 		</div><!-- center -->	
 	</footer>
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>

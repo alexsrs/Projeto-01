@@ -51,7 +51,12 @@ header .logo{
 	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
+	
+}
+
+.logo a{
 	color: white;
+	text-decoration: none;
 }
 
 .mobile{
@@ -274,10 +279,6 @@ footer p{
 		padding: 40px 20px;
 		margin: 0;
 	}
-
-
-
-	
 }
 
 @media screen and (max-width: 700px){
