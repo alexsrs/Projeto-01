@@ -1,4 +1,3 @@
-<html>
 <head>
 	<title>Projeto 01 - PHP</title>
 	<link href="css/fontawesome.min.css" rel="stylesheet">
