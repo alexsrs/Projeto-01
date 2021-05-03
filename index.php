@@ -25,11 +25,9 @@
 			case 'servicos':
 				echo '<target="servicos" />';
 				# code...
-				break;
-		
+				break;		
 		}
 	?>
-
 	<header>
 		<div class="center">
 			<div class="logo left"><a href="<?php echo INCLUDE_PATH; ?>">Solid FIT</a></div><!-- logo -->
@@ -54,8 +52,6 @@
 		</div><!-- center -->
 	</header>
 <?php 
-	
-
 	if(file_exists('pages/'.$url.'.php')){
 		include('pages/'.$url.'.php');
 	} else {
@@ -63,15 +59,11 @@
 		if ($url != 'sobre' && $url != 'servicos') {
 			$pagina404 = true;
 			include('pages/404.php');
-
 			# code...
 		} else {
 			include('pages/home.php');
 		}
-		
 	}
-
-
 ?>
 	<footer>
 		<div class="center">
@@ -80,14 +72,12 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
-
-	<?php if($url == 'contato'){
-
-	}
+	<?php
+		if($url == 'contato'){
 	?>
-
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCnh9a-0dAbErxqWnQiJQqfL4DU_9YLEb8"></script>
 	<script src="<?php echo INCLUDE_PATH;?>js/initMap.js"></script>
+<?php } ?>
 </body>
 </html>
 
