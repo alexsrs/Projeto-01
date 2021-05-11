@@ -20,12 +20,15 @@ $(function(){
 	// Função de scrool jquery 
 
 
-	if($('target').lenght = 0){
+	if($('target').length > 0){
 		// O elemento existe, portanto precisamos dar o scroll em algum elemento 
 		var elemento = '#'+$('target').attr('target');
-		alert(elemento);
+		//alert(elemento);
 		var divScroll = $(elemento).offset().top;
-		$('html,body').animate({'scrollTop':divScroll});
+		
+		$('html,body').animate({scrollTop:divScroll},2000);
+		alert(divScroll);
 	}
 
 })
+
