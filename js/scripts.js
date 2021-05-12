@@ -27,7 +27,7 @@ $(function(){
 		var divScroll = $(elemento).offset().top;
 		
 		$('html,body').animate({scrollTop:divScroll},2000);
-		alert(divScroll);
+		//lert(divScroll);
 	}
 
 })

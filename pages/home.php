@@ -11,7 +11,7 @@
 	</section><!--banner-principal-->
 	<section class="descricao-autor">
 		<div class="center">
-			<div class="w50 left">
+			<div id="sobre" class="w50 left">
 				<h2>Alex Sandro R. de Souza</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus. In ac purus congue, aliquam orci eu, dignissim massa. Duis tincidunt orci ut cursus mollis. Vivamus nec lacus diam. Praesent dictum sed ante non blandit. Vestibulum diam ante, dignissim ut rhoncus et, faucibus non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in enim lacus. Nullam efficitur nisl vel arcu vehicula, vitae auctor nibh convallis. In hac habitasse platea dictumst. Integer porttitor dolor ac bibendum viverra. Nunc luctus aliquam neque vitae suscipit. Etiam varius, diam eu iaculis sollicitudin, velit dui porttitor ante, in semper risus leo id turpis.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus. In ac purus congue, aliquam orci eu, dignissim massa. Duis tincidunt orci ut cursus mollis. Vivamus nec lacus diam.</p>
@@ -25,7 +25,7 @@
 	<section class="especialidades">
 		<div class="center">
 			<h2 class="title">Especialidades</h2>
-			<div id="sobre" class="box-especialidade w33 left">
+			<div class="box-especialidade w33 left">
 				<h3><i class="fab fa-css3"></i></h3>
 				<h4>CSS3</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut eros vel tortor blandit ultrices ac ac justo. Nulla euismod diam id risus maximus rutrum. Integer mollis diam ex, vel molestie orci scelerisque a. Phasellus est risus, pulvinar id volutpat mattis, luctus accumsan purus.</p>

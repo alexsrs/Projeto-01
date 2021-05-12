@@ -19,11 +19,11 @@
 		$url = isset($_GET['url']) ? $_GET['url'] : 'home';
 		switch ($url) {
 			case 'sobre':
-				echo '<target="sobre" />';
+				echo '<target target="sobre" />';
 				# code...
 				break;
 			case 'servicos':
-				echo '<target="servicos" />';
+				echo '<target target="servicos" />';
 				# code...
 				break;		
 		}
