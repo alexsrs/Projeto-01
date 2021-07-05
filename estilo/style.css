@@ -155,6 +155,31 @@ section.banner-container form input[type=submit]{
 	border: 0;
 }
 
+.bullets{
+	position: absolute;
+	z-index: 5;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.bullets span{
+	display: inline-block;
+	margin: 0 5px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #444;
+}
+
+.bullets span.active-slider{
+	background: white;
+}
+
+
+
+
 section.descricao-autor{
 	padding: 40px 0;
 }
