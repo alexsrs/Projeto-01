@@ -30,5 +30,23 @@ $(function(){
 		//lert(divScroll);
 	}
 
+	carregarDinamico()	;
+
+	function carregarDinamico(){
+		$('[realtime]').click(function(){
+			var pagina = $(this).attr('realtime');
+			$('.container-principal').hide();
+			$('.container-principal').load(INCLUDE_PATH+'pages/'+pagina+'.php');
+			
+			setTimeout(function(){
+				initialize();
+				addMarker(-27.609959,-48.576585,'',"Minha casa",undefined,false);
+			},1000);
+			$('.container-principal').fadeIn(1000);
+			
+			return false;
+		})
+	}
+
 })
 

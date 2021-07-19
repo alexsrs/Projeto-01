@@ -15,6 +15,7 @@
 	<meta charset="utf-8" />
 </head>
 <body>
+	<base base="<?php echo INCLUDE_PATH; ?>" />
 	<?php 
 		$url = isset($_GET['url']) ? $_GET['url'] : 'home';
 		switch ($url) {
@@ -36,7 +37,7 @@
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
 			<nav class="mobile right">
@@ -45,12 +46,14 @@
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
 			<div class="clear"></div><!-- clear -->
 		</div><!-- center -->
 	</header>
+
+<div class="container-principal">	
 <?php 
 	if(file_exists('pages/'.$url.'.php')){
 		include('pages/'.$url.'.php');
@@ -65,12 +68,15 @@
 		}
 	}
 ?>
+</div><!--container-principal-->
 	<footer class="">
 		<div class="center">
 			<p>Solid Fit - Todos os direitos reservados</p>
 		</div><!-- center -->	
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCnh9a-0dAbErxqWnQiJQqfL4DU_9YLEb8"></script>
+	<script src="<?php echo INCLUDE_PATH;?>js/initMap.js"></script>
 	<script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 	<?php 
 		if ($url == 'home' || $url =='') {
@@ -80,8 +86,7 @@
 	<?php
 		if($url == 'contato'){
 	?>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCnh9a-0dAbErxqWnQiJQqfL4DU_9YLEb8"></script>
-	<script src="<?php echo INCLUDE_PATH;?>js/initMap.js"></script>
+	
 <?php } ?>
 </body>
 </html>

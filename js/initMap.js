@@ -1,8 +1,5 @@
-$(function(){
-
 	var map;
-	
-	function initialize() {
+function initialize() {
 
 	  var mapProp = {
 	    center:new google.maps.LatLng(-27.609959,-48.576585),
@@ -74,9 +71,10 @@ $(function(){
 	    	}
 	}
 
+$(function(){
+
 initialize();
 
 addMarker(-27.609959,-48.576585,'',"Minha casa",undefined,false);
-
 
 })
