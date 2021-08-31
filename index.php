@@ -29,6 +29,8 @@
 				break;		
 		}
 	?>
+
+	<?php new Email(); ?>
 	<header>
 		<div class="center">
 			<div class="logo left"><a href="<?php echo INCLUDE_PATH; ?>">Solid FIT</a></div><!-- logo -->
