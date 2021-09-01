@@ -55,14 +55,14 @@ class OAuth
      *
      * @var string
      */
-    protected $oauthUserEmail = '';
+    protected $oauthUserEmail = 'creapix.teste@gmail.com';
 
     /**
      * The client secret, generated in the app definition of the service you're connecting to.
      *
      * @var string
      */
-    protected $oauthClientSecret = '';
+    protected $oauthClientSecret = 'crea1234';
 
     /**
      * The client ID, generated in the app definition of the service you're connecting to.
