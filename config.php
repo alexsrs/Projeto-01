@@ -4,7 +4,7 @@
 	$autoload = function($class){
 		//Carregar php mailer
 		If($class == 'Email'){
-			include('classes/phpmailer/get_oauth_token.php');
+			include('vendor/autoload.php');
 		}
 
 
