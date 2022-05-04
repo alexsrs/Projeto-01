@@ -1,13 +1,18 @@
 <?php
+
 	
 	//Carregar classes 	
 	$autoload = function($class){
+
 		//Carregar php mailer
-		If($class == 'Email'){
-			include('vendor/autoload.php');
-		}
+		if($class =='Email'){
+			include('classes/vendor/autoload.php');
+			
+		};
 
 
+
+	
 		include('classes/'.$class.'.php');
 	};
 

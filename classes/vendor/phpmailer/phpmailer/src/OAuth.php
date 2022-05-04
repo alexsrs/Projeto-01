@@ -33,7 +33,7 @@ use League\OAuth2\Client\Token\AccessToken;
  *
  * @author  Marcus Bointon (Synchro/coolbru) <phpmailer@synchromedia.co.uk>
  */
-class OAuth
+class OAuth implements OAuthTokenProvider
 {
     /**
      * An instance of the League OAuth Client Provider.
@@ -55,14 +55,14 @@ class OAuth
      *
      * @var string
      */
-    protected $oauthUserEmail = 'creapix.teste@gmail.com';
+    protected $oauthUserEmail = '';
 
     /**
      * The client secret, generated in the app definition of the service you're connecting to.
      *
      * @var string
      */
-    protected $oauthClientSecret = 'crea1234';
+    protected $oauthClientSecret = '';
 
     /**
      * The client ID, generated in the app definition of the service you're connecting to.
