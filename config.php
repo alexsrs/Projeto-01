@@ -1,9 +1,9 @@
 <?php
 
 	
-define('INCLUDE_PATH','http://localhost/php-projetos/Projeto-01/');
 
-	require 'classes/vendor/autoload.php';
+
+	require 'classes/phpmailer/PHPmailerAutoload.php';
 	//Carregar classes 	
 $autoload = function($class){
 		include('classes/'.$class.'.php');
@@ -11,4 +11,6 @@ $autoload = function($class){
 
 	spl_autoload_register($autoload);
 	
+
+	define('INCLUDE_PATH','http://localhost/php-projetos/Projeto-01/');
 ?>
