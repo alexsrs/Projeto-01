@@ -15,6 +15,33 @@
 	<meta charset="utf-8" />
 </head>
 <body>
+	<?php 
+				if (isset($_POST['acao'])) {
+					// Enviei o formulário.
+					if($_POST['email'] != ''){
+						$email = $_POST['email'];
+						if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+							// Tudo certo, é um email 
+							//agora só enviar
+							$mail = new Email('mail.creapix.com.br', 'teste@creapix.com.br','123456teste','PROJETO01');
+							$mail->addAddress('alexsrs@gmail.com','ADM do Site');
+							$corpo = "E-mail cadastrado na home do site:<hr>$email";
+							$info = array('assunto'=>'Um novo email cadastrado no site','corpo'=>$corpo);
+							$mail->formatarEmail($info);
+
+							if($mail->enviarEmail()){echo '<script>alert("Email enviado com sucesso")</script>';
+							} else {echo '<script>alert("Algo deu errado")</script>';
+
+							}
+						} else {echo '<script>alert("Não é um email valido ")</script>';
+						}
+					} else {
+						echo '<script>alert("Campos vazios não são permitidos")</script>';
+					}
+
+				}
+			?>
+
 	<base base="<?php echo INCLUDE_PATH; ?>" />
 	<?php 
 		$url = isset($_GET['url']) ? $_GET['url'] : 'home';
@@ -32,7 +59,7 @@
 
 	
 
-	<?php new Email(); ?>
+	
 	<header>
 		<div class="center">
 			<div class="logo left"><a href="<?php echo INCLUDE_PATH; ?>">Solid FIT</a></div><!-- logo -->
