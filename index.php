@@ -16,7 +16,7 @@
 </head>
 <body>
 	<?php 
-				if (isset($_POST['acao'])) {
+				if (isset($_POST['acao']) && $_POST['identificador'] == 'form_home') {
 					// Enviei o formulário.
 					if($_POST['email'] != ''){
 						$email = $_POST['email'];
@@ -39,6 +39,26 @@
 						echo '<script>alert("Campos vazios não são permitidos")</script>';
 					}
 
+				} else if (isset($_POST['acao']) && $_POST['identificador'] == 'form_contato') {
+					/*
+					$nome = $_POST['nome'];
+					$email = $_POST['email'];
+					$telefone = $_POST['telefone'];
+					$mensagem = $_POST['mensagem'];
+					*/
+					$assunto = 'Novo contato do site';
+					$corpo ='';
+					foreach ($_POST as $key => $value) {
+						$corpo.=ucfirst($key).": ".$value;
+						$corpo.="<hr>";
+					}
+					$info = array('assunto'=>$assunto,'corpo'=>$corpo);
+					$mail = new Email('smtp.titan.email', 'teste@creapix.com.br','123456teste','PROJETO01');
+					$mail->addAddress('alexsrs@gmail.com','ADM do Site');
+					$mail->formatarEmail($info);
+					if($mail->enviarEmail()){echo '<script>alert("Email enviado com sucesso")</script>';
+						} else {echo '<script>alert("Algo deu errado")</script>';
+					}
 				}
 			?>
 
