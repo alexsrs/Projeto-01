@@ -23,7 +23,7 @@
 						if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 							// Tudo certo, é um email 
 							//agora só enviar
-							$mail = new Email('mail.creapix.com.br', 'teste@creapix.com.br','123456teste','PROJETO01');
+							$mail = new Email('smtp.titan.email', 'teste@creapix.com.br','123456teste','PROJETO01');
 							$mail->addAddress('alexsrs@gmail.com','ADM do Site');
 							$corpo = "E-mail cadastrado na home do site:<hr>$email";
 							$info = array('assunto'=>'Um novo email cadastrado no site','corpo'=>$corpo);
