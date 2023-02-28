@@ -15,53 +15,6 @@
 	<meta charset="utf-8" />
 </head>
 <body>
-	<?php 
-				if (isset($_POST['acao']) && $_POST['identificador'] == 'form_home') {
-					// Enviei o formulário.
-					if($_POST['email'] != ''){
-						$email = $_POST['email'];
-						if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-							// Tudo certo, é um email 
-							//agora só enviar
-							$mail = new Email('smtp.titan.email', 'teste@creapix.com.br','123456teste','PROJETO01');
-							$mail->addAddress('alexsrs@gmail.com','ADM do Site');
-							$corpo = "E-mail cadastrado na home do site:<hr>$email";
-							$info = array('assunto'=>'Um novo email cadastrado no site','corpo'=>$corpo);
-							$mail->formatarEmail($info);
-
-							if($mail->enviarEmail()){echo '<script>alert("Email enviado com sucesso")</script>';
-							} else {echo '<script>alert("Algo deu errado")</script>';
-
-							}
-						} else {echo '<script>alert("Não é um email valido ")</script>';
-						}
-					} else {
-						echo '<script>alert("Campos vazios não são permitidos")</script>';
-					}
-
-				} else if (isset($_POST['acao']) && $_POST['identificador'] == 'form_contato') {
-					/*
-					$nome = $_POST['nome'];
-					$email = $_POST['email'];
-					$telefone = $_POST['telefone'];
-					$mensagem = $_POST['mensagem'];
-					*/
-					$assunto = 'Novo contato do site';
-					$corpo ='';
-					foreach ($_POST as $key => $value) {
-						$corpo.=ucfirst($key).": ".$value;
-						$corpo.="<hr>";
-					}
-					$info = array('assunto'=>$assunto,'corpo'=>$corpo);
-					$mail = new Email('smtp.titan.email', 'teste@creapix.com.br','123456teste','PROJETO01');
-					$mail->addAddress('alexsrs@gmail.com','ADM do Site');
-					$mail->formatarEmail($info);
-					if($mail->enviarEmail()){echo '<script>alert("Email enviado com sucesso")</script>';
-						} else {echo '<script>alert("Algo deu errado")</script>';
-					}
-				}
-			?>
-
 	<base base="<?php echo INCLUDE_PATH; ?>" />
 	<?php 
 		$url = isset($_GET['url']) ? $_GET['url'] : 'home';
@@ -135,5 +88,6 @@
 		if($url == 'contato'){
 	?>
 <?php } ?>
+	<script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>
 </body>
 </html>
