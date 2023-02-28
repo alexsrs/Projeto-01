@@ -1,8 +1,4 @@
 <?php
-
-	
-
-
 	require 'classes/phpmailer/PHPmailerAutoload.php';
 	//Carregar classes 	
 $autoload = function($class){
@@ -11,6 +7,5 @@ $autoload = function($class){
 
 	spl_autoload_register($autoload);
 	
-
-	define('INCLUDE_PATH','http://localhost/php-projetos/Projeto-01/');
+	define('INCLUDE_PATH','http://localhost/Projeto-01/');
 ?>

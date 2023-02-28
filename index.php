@@ -76,9 +76,6 @@
 				break;		
 		}
 	?>
-
-	
-
 	
 	<header>
 		<div class="center">
@@ -137,9 +134,6 @@
 	<?php
 		if($url == 'contato'){
 	?>
-	
 <?php } ?>
 </body>
 </html>
-
-
