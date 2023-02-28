@@ -8,7 +8,7 @@ $(function(){
             data:form.serialize()
         }).done(function(data){
             if(data.sucesso){
-                console.log("Formulário enviado com sucesso")
+                console.log("Formulário enviado com sucesso");
             } else {
                 console.log("ocorreu um erro ao enviar o email");
             }

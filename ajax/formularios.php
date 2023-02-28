@@ -11,12 +11,11 @@
    $mail = new Email('smtp.titan.email', 'teste@creapix.com.br','123456teste','PROJETO01');
    $mail->addAddress('alexsrs@gmail.com','ADM do Site');
    $mail->formatarEmail($info);
-   //if($mail->enviarEmail()){
-    
-   //     $data['sucesso'] = true;
-   //    } else {
-   //     $data['erro'] = true;
-   //}
+   if($mail->enviarEmail()){
+       $data['sucesso'] = true;
+    } else {
+       $data['erro'] = true;
+   }
     $data['retorno'] = 'sucesso';
     die(json_encode($data));
 ?>
