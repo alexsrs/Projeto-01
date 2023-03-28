@@ -29,6 +29,11 @@
 				break;		
 		}
 	?>
+	<div class="sucesso">Formulário enviado com sucesso!</div>
+	<div class="erro">Erro no envio do Formulário!</div>
+	<div class="overlay-loading">
+		<img src="<?php echo INCLUDE_PATH ?>images/ajax-loader.gif" />
+	</div><!--overlay-loading-->
 	
 	<header>
 		<div class="center">

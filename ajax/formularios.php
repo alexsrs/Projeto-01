@@ -16,6 +16,10 @@
     } else {
        $data['erro'] = true;
    }
-    $data['retorno'] = 'sucesso';
+
+    $data['sucesso']=false;
+    $data['erro']=true;
+
+    //$data['retorno'] = 'sucesso';
     die(json_encode($data));
 ?>
