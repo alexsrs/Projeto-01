@@ -47,6 +47,7 @@ img{
 /** Estilização do site **/
 
 .sucesso{
+	text-align: center;
 	display: none;
 	position: fixed;
 	right: 20px;
@@ -58,9 +59,11 @@ img{
 	font-weight: bold;
 	font-size: 14px;
 	background:#008000;
+	border-radius:10px;
 }
 
 .erro{
+	text-align: center;
 	display: none;
 	position: fixed;
 	right: 20px;
@@ -72,6 +75,7 @@ img{
 	font-weight: bold;
 	font-size: 14px;
 	background:#dc3545;
+	border-radius:10px;
 }
 
 .overlay-loading{
