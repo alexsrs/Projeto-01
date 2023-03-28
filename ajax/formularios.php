@@ -17,9 +17,9 @@
        $data['erro'] = true;
    }
 
-    $data['sucesso']=false;
-    $data['erro']=true;
+    // Força o erro no envio do formulário, tirar o comentário para teste 
+    //$data['sucesso']=false;
+    //$data['erro']=true;
 
-    //$data['retorno'] = 'sucesso';
     die(json_encode($data));
 ?>

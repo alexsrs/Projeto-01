@@ -1,6 +1,6 @@
 <?php include('config.php'); ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<title>Projeto 01 - PHP</title>
 	<link href="<?php echo INCLUDE_PATH; ?>css/fontawesome.min.css" rel="stylesheet">
