@@ -10,6 +10,8 @@ html,body {
     background: rgb(225,225,225);
 }
 
+
+/* Página de login */
 .box-login{
     max-width: 600px;
     width: 95%;
@@ -62,5 +64,44 @@ html,body {
     background: #F75353;
     color: white;
     font-size: 15px;
-
 }
+
+/* fim página de login */
+
+/* Painel de controle */ 
+
+.clear{
+    clear: both;
+}
+
+.center{
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+div.menu{
+    overflow-y: auto;
+    height: 100%;
+    background: #455A64;
+    float: left;
+    width: 300px;
+}
+
+
+header{
+    float: left;
+    padding: 10px 0;
+    background: #78909C;
+    width: calc(100% - 300px);
+}
+
+.logout{
+    float: right;
+}
+
+.logout a{
+    color: white;
+    font-size: 22px;
+}
+
+
