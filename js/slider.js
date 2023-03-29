@@ -18,11 +18,11 @@ $(function() {
 	}
 	function changeSlider(){
 		setInterval(function(){
-			$('.banner-single').eq(curSlide).stop().fadeOut(2000);
+			$('.banner-single').eq(curSlide).animate({'opacity':'0'},2000);
 			curSlide++;
 			if (curSlide > maxSlide)
 				curSlide = 0;
-			$('.banner-single').eq(curSlide).stop().fadeIn(2000);
+				$('.banner-single').eq(curSlide).animate({'opacity':'1'},2000);
 			// trocar bullets da navegação de slider
 			$('.bullets span').removeClass('active-slider');
 			$('.bullets span').eq(curSlide).addClass('active-slider');
@@ -31,9 +31,9 @@ $(function() {
 
 	$('body').on('click','.bullets span',function(){
 		var currentBullet = $(this);
-		$('.banner-single').eq(curSlide).stop().fadeOut(2000);
+		$('.banner-single').eq(curSlide).animate({'opacity':'0'},2000);
 		curSlide = currentBullet.index();
-		$('.banner-single').eq(curSlide).stop().fadeIn(2000);
+		$('.banner-single').eq(curSlide).animate({'opacity':'1'},2000);
 		$('.bullets span').removeClass('active-slider');
 		currentBullet.addClass('active-slider');
 	});
