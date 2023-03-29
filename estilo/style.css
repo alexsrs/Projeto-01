@@ -152,7 +152,7 @@ section.banner-container{
 	left: 0;
 	top: 0;
 	width: 100%;
-	display: none;
+	/*display: none; */
 	height: 100%;
 	background-size: cover;
 	background-position: center;
