@@ -140,6 +140,27 @@ nav.desktop a:hover{
 	text-decoration: underline;
 }
 
+nav.desktop a > span{
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:8px 28px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+nav.desktop a > span:hover {
+		background-color:#5cbf2a;
+	}
+nav.desktop a > span:active {
+		position:relative;
+		top:1px;
+	}
+
 section.banner-container{
 	width: 100%;
 	height: 600px;
@@ -480,6 +501,27 @@ section.erro-404 p{
 		color: #444;
 		text-decoration: none;
 	}
+
+	nav.mobile a > span{
+		background-color:#44c767;
+		border-radius:28px;
+		border:1px solid #18ab29;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-size:17px;
+		padding:8px 28px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #2f6627;
+	}
+	
+	nav.mobile a > span:hover {
+			background-color:#5cbf2a;
+		}
+	nav.mobile a > span:active {
+			position:relative;
+			top:1px;
+		}
 
 
 	.botao-menu-mobile{
