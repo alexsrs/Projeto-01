@@ -20,27 +20,28 @@
 </head>
 <body>  
 <div class="menu">
-    <div class="box-usuario">
-        
-        <?php
-            if($_SESSION['img'] == ''){
-        ?>
-            <div class="avatar-usuario">
-                <i class="fa fa-user"></i>
-            </div><!-- avatar-usuario -->
-        <?php } else { ?>
-            <div class="imagem-usuario">
-                <img src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $_SESSION['img']; ?>" />
-                
-            </div><!-- imagem-usuario -->
-        <?php } ?> <!-- fechando o IF lá de cima -->
+    <div class="menu-wraper">
+        <div class="box-usuario">
+            
+            <?php
+                if($_SESSION['img'] == ''){
+            ?>
+                <div class="avatar-usuario">
+                    <i class="fa fa-user"></i>
+                </div><!-- avatar-usuario -->
+            <?php } else { ?>
+                <div class="imagem-usuario">
+                    <img src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $_SESSION['img']; ?>" />
+                    
+                </div><!-- imagem-usuario -->
+            <?php } ?> <!-- fechando o IF lá de cima -->
 
-        <div class="nome-usuario">
-            <p><?php echo $_SESSION['nome']; ?></p>
-            <p><?php echo pegaCargo($_SESSION['cargo']); ?></p>
-        </div><!-- nome-usuario -->
-    </div><!-- box-usuario -->
-
+            <div class="nome-usuario">
+                <p><?php echo $_SESSION['nome']; ?></p>
+                <p><?php echo pegaCargo($_SESSION['cargo']); ?></p>
+            </div><!-- nome-usuario -->
+        </div><!-- box-usuario -->
+    </div><!-- menu-wraper -->
 </div><!-- menu -->
 
     <header> 
@@ -54,6 +55,38 @@
             <div class="clear"></div><!-- clear -->
         </div> <!-- center -->
     </header>
+
+<div class="content">
+
+    <div class="box-content left w100">
+        
+    </div><!-- box-content -->
+   
+
+
+
+    <div class="box-content left w100">
+
+    </div><!-- box-content -->
+     
+
+
+
+    <div class="box-content left w50">
+        
+    </div><!-- box-content -->
+
+
+
+
+    <div class="box-content right w50">
+        
+    </div><!-- box-content -->
+    <div class="clear"></div><!--clear -->
+
+</div><!-- content -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="<?php echo INCLUDE_PATH_PAINEL ?>js/main.js"></script>
 </body>
 </html>
 
