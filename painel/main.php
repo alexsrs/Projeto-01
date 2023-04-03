@@ -4,7 +4,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,8 +20,7 @@
 <body>  
 <div class="menu">
     <div class="menu-wraper">
-        <div class="box-usuario">
-            
+        <div class="box-usuario">         
             <?php
                 if($_SESSION['img'] == ''){
             ?>
@@ -43,7 +41,7 @@
         </div><!-- box-usuario -->
         <div class="items-menu">
             <h2>Cadastro</h2>
-            <a href="">Cadastrar depoimento</a>
+            <a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar depoimento</a>
             <a href="">Cadastrar serviço</a>
             <a href="">Cadastrar slider</a>
             <h2>Gestão</h2>
@@ -65,7 +63,9 @@
             <div class="menu-btn">
                 <i class="fa fa-bars"></i>
             </div><!-- menu-btn -->
+
             <div class="logout">
+                <a href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fa fa-home"></i><span>Página inicial</span></a>
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>?logout"><i class="fa fa-window-close"></i><span>Sair</span></a>
             </div><!-- logout -->
             <div class="clear"></div><!-- clear -->
@@ -73,56 +73,8 @@
     </header>
 
 <div class="content">
-
-    <div class="box-content left w100">
-        <h2><i class="fa fa-home"></i>Painel de controle - Solid Fit</h2>
-        <div class="box-metricas">
-            <div class="box-metrica-single">
-                <div class="box-metrica-wraper">
-                    <h2>Usuários  online</h2>
-                    <p>10</p>
-                </div><!-- box-metrica-wraper -->
-            </div><!-- box-metrica-single -->
-            <div class="box-metrica-single">
-                <div class="box-metrica-wraper">
-                    <h2>Total de visitas</h2>
-                    <p>100</p>
-                </div><!-- box-metrica-wraper -->
-            </div><!-- box-metrica-single -->
-            <div class="box-metrica-single">
-                <div class="box-metrica-wraper">
-                    <h2>Visitas hoje</h2>
-                    <p>30</p>
-                </div><!-- box-metrica-wraper -->
-            </div><!-- box-metrica-single -->
-
-            <div class="clear"></div><!--clear -->
-        </div><!-- box-metricas -->
-
-        
-    </div><!-- box-content -->
-   
-
-
-
-    <div class="box-content left w100">
-
-    </div><!-- box-content -->
-     
-
-
-
-    <div class="box-content left w50">
-        
-    </div><!-- box-content -->
-
-
-
-
-    <div class="box-content right w50">
-        
-    </div><!-- box-content -->
-    <div class="clear"></div><!--clear -->
+    <?php Painel::loadPage(); ?>
+    
 
 </div><!-- content -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

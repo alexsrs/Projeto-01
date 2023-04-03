@@ -3,6 +3,7 @@
 	//Carregar classes 	
 
 	session_start();
+	date_default_timezone_set('America/Sao_Paulo');
 
 	$autoload = function($class){
 		if($class =="Email"){
@@ -21,6 +22,9 @@
 	define('USER','root');
 	define('PASSWORD','');
 	define('DATABASE','projeto-01');
+
+	//constantes para o painel de controle
+	define('NOME_EMPRESA','Solid Fit');
 
 	// Funções
 	function pegaCargo($cargo){

@@ -85,10 +85,10 @@ body{
 
 header{
     position: relative;
-    left: 300px;
+    left: 250px;
     padding: 10px 0;
     background: #78909C;
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
 }
 
 .logout{
@@ -96,8 +96,11 @@ header{
 }
 
 .logout a{
+    padding: 0 20px;
+    position: relative;
+    top: 4px;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -115,7 +118,7 @@ header{
 }
 
 .menu-wraper{
-    width: 300px;
+    width: 250px;
 }
 
 div.menu{
@@ -128,7 +131,7 @@ div.menu{
     top: 0;
     background: #455A64;
     float: left;
-    width: 300px;
+    width: 250px;
 }
 
 div.box-usuario{
@@ -193,16 +196,16 @@ div.box-usuario{
 }
 
 .content{
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     position: relative;
-    left: 300px;
+    left: 250px;
     padding: 10px;
 }
 
 .box-content{
     background: white;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
 .items-menu{
@@ -253,7 +256,7 @@ div.box-usuario{
 
 .box-metrica-wraper{
 	padding: 10px 20px;
-	text-align: left;
+	text-align: center;
 	color: white;
 }
 
@@ -265,6 +268,33 @@ div.box-usuario{
 	padding: 10px 0;
 	font-size: 16px;
 }
+
+/* tabela responsiva */
+
+.table-responsive{
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.table-responsive .row:nth-of-type(1){
+    font-weight: bold;
+    background: #00aca7;
+    color: white;
+    border-bottom: 1px solid #333;
+}
+
+.table-responsive .row{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 18px;
+}
+
+.col{
+    float: left;
+    width: 50%;
+}
+
+
 
 @media screen and (max-width: 1200px){
     .box-metrica-single{
