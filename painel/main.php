@@ -41,6 +41,22 @@
                 <p><?php echo pegaCargo($_SESSION['cargo']); ?></p>
             </div><!-- nome-usuario -->
         </div><!-- box-usuario -->
+        <div class="items-menu">
+            <h2>Cadastro</h2>
+            <a href="">Cadastrar depoimento</a>
+            <a href="">Cadastrar serviço</a>
+            <a href="">Cadastrar slider</a>
+            <h2>Gestão</h2>
+            <a href="">Listar depoimentos</a>
+            <a href="">Listar serviços</a>
+            <a href="">Listar slides</a>
+            <h2>Administração</h2>
+            <a href="">Editar usuário</a>
+            <a href="">Adicionar usuário</a>
+            <h2>Configuração</h2>
+            <a href="">Editar</a>
+        </div><!-- items-menu -->
+
     </div><!-- menu-wraper -->
 </div><!-- menu -->
 
@@ -59,6 +75,30 @@
 <div class="content">
 
     <div class="box-content left w100">
+        <h2><i class="fa fa-home"></i>Painel de controle - Solid Fit</h2>
+        <div class="box-metricas">
+            <div class="box-metrica-single">
+                <div class="box-metrica-wraper">
+                    <h2>Usuários  online</h2>
+                    <p>10</p>
+                </div><!-- box-metrica-wraper -->
+            </div><!-- box-metrica-single -->
+            <div class="box-metrica-single">
+                <div class="box-metrica-wraper">
+                    <h2>Total de visitas</h2>
+                    <p>100</p>
+                </div><!-- box-metrica-wraper -->
+            </div><!-- box-metrica-single -->
+            <div class="box-metrica-single">
+                <div class="box-metrica-wraper">
+                    <h2>Visitas hoje</h2>
+                    <p>30</p>
+                </div><!-- box-metrica-wraper -->
+            </div><!-- box-metrica-single -->
+
+            <div class="clear"></div><!--clear -->
+        </div><!-- box-metricas -->
+
         
     </div><!-- box-content -->
    

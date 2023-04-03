@@ -122,7 +122,7 @@ div.menu{
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
-    padding: 20px;
+    padding: 10px 0;
     position: fixed;
     left: 0;
     top: 0;
@@ -137,6 +137,14 @@ div.box-usuario{
 
 .avatar-usuario{
     text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #2F3D42;
+}
+
+.imagem-usuario > img{
     display: inline-block;
     width: 130px;
     height: 130px;
@@ -197,10 +205,82 @@ div.box-usuario{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px){
-    .menu{
-        display: none;
+.items-menu{
+    margin-top: 30px;
+}
+
+.items-menu h2{
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    background: #2F3D42;
+    color: white;
+    padding: 8px;
+}
+
+.items-menu a{
+    display: block;
+    padding: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #2F3D42;
+}
+
+/*Box Metricas*/
+
+.box-metricas{
+	margin-top:16px;
+	padding:0 15px;
+}
+
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	background: #F4B03E;
+	border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background: #E05C4E;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #0091ea;
+}
+
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wraper h2{
+	font-size: 20px;
+}
+
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1200px){
+    .box-metrica-single{
+        height: 120px;
     }
+}
+
+@media screen and (max-width: 1024px){
+    .box-metrica-single{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+   
 
     .content{
         width: 100%;
@@ -219,3 +299,4 @@ div.box-usuario{
     }
 }
     
+
