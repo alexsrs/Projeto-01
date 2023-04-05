@@ -294,6 +294,66 @@ div.box-usuario{
     width: 50%;
 }
 
+.box-content form{
+    margin: 30px 0;
+}
+
+
+.box-content form label{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password]{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+
+.box-content form input[type=file]{
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.box-content form input[type=submit]{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #1de9b6;
+    font-size: 16px;
+    color: white;
+    border: 0;
+
+}
+
+/* box de alerta */
+
+.box-alert{
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.sucesso{
+    background: #A5D6A7;
+    color: white;
+}
+
+.erro{
+    background: #F75353;
+    color: white;
+}
 
 
 @media screen and (max-width: 1200px){
