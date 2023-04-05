@@ -35,4 +35,28 @@
 			'2' => 'Administrador'];
 			return $arr[$cargo];
 	}
+
+	function selecionadoMenu($par){
+		$url = explode('/',@$_GET['url'])[0];
+			if($url == $par){
+				echo 'class="menu-active"';
+			}
+		}
+
+	function verificaPermissaoMenu($permissao){
+		if($_SESSION['cargo'] >= $permissao){
+			return;
+		} else {
+			echo 'style="display:none;"';
+		}
+	}
+
+	function verificaPermissaoPagina($permissao){
+		if($_SESSION['cargo'] >= $permissao){
+			return;
+		} else {
+			include('painel/pages/permissao-negada.php');
+			die();
+		}
+	}
 ?>
