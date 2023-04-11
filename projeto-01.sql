@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 05, 2023 at 07:13 PM
+-- Generation Time: Apr 11, 2023 at 07:01 PM
 -- Server version: 8.0.31
 -- PHP Version: 7.4.33
 
@@ -34,14 +34,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.online` (
   `ultima_acao` datetime NOT NULL,
   `token` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
-
---
--- Dumping data for table `tb_admin.online`
---
-
-INSERT INTO `tb_admin.online` (`id`, `ip`, `ultima_acao`, `token`) VALUES
-(16, '::1', '2023-04-05 15:51:48', '642dc3447928a');
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb3;
 
 -- --------------------------------------------------------
 
@@ -58,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.usuarios` (
   `nome` varchar(255) NOT NULL,
   `cargo` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `tb_admin.usuarios`
@@ -66,7 +59,8 @@ CREATE TABLE IF NOT EXISTS `tb_admin.usuarios` (
 
 INSERT INTO `tb_admin.usuarios` (`id`, `user`, `password`, `img`, `nome`, `cargo`) VALUES
 (1, 'admin', 'admin', 'avatar-nerd.jpg', 'Alex Sandro', 2),
-(2, 'teste', 'teste', '', 'usuario de teste', 1);
+(3, 'jose', 'jose', 'teste-avatar.jpg', 'Jose aluno', 0),
+(4, 'prof', 'prof', 'teste-avatar.jpg', 'Professor baitola', 1);
 
 -- --------------------------------------------------------
 
