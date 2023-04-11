@@ -1,5 +1,12 @@
 <?php
 	
+	/* 
+	TODO:  Variável global com os cargos estamos usando 2 mais vamos otimizar e unificar
+	*/
+
+
+
+
 	//Carregar classes 	
 
 	session_start();
@@ -28,12 +35,8 @@
 	define('NOME_EMPRESA','Solid Fit');
 
 	// Funções
-	function pegaCargo($cargo){
-		$arr = [
-			'0' => 'Aluno',
-			'1' => 'Professor',
-			'2' => 'Administrador'];
-			return $arr[$cargo];
+	function pegaCargo($indice){
+		return Painel::$cargos[$indice];
 	}
 
 	function selecionadoMenu($par){

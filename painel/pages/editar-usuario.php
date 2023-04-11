@@ -7,7 +7,7 @@
         if(isset($_POST['acao'])){
             // enviando o formulario 
             
-            $usuario = new Usuario();
+            //$usuario = new Usuario();
             $nome = $_POST['nome'];
             $password = $_POST['password'];
             $imagem = $_FILES['imagem'];
@@ -46,12 +46,12 @@
 
     <div class="form-group">
         <label>Nome:</label>
-        <input type="text" name="nome" require value="<?php echo $_SESSION['nome']; ?>"/>
+        <input type="text" name="nome" required value="<?php echo $_SESSION['nome']; ?>"/>
     </div><!-- form-group -->
 
     <div class="form-group">
         <label>Senha:</label>
-        <input type="password" name="password" require value="<?php echo $_SESSION['password']; ?>" />
+        <input type="password" name="password" required value="<?php echo $_SESSION['password']; ?>" />
     </div><!-- form-group -->
 
     <div class="form-group">
