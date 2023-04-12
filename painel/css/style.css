@@ -272,7 +272,7 @@ div.box-usuario{
 /* tabela responsiva */
 
 .table-responsive{
-    max-width: 800px;
+    max-width: 960px;
     margin: 20px auto;
 }
 
@@ -291,7 +291,7 @@ div.box-usuario{
 
 .col{
     float: left;
-    width: 50%;
+    width: 33.33%;
 }
 
 .box-content form{

@@ -27,8 +27,8 @@
                 // podemos cadastrar !
                 if($cargo >= $_SESSION['cargo']){
                     Painel::alert('erro','Você não pode cadastrar um usuario com permissões maiores que as suas');
-                } else if(Painel::imagemValida($imagem) == false){
-                    Painel::alert('erro','O formato da imagem não é valida');
+               // } else if(Painel::imagemValida($imagem) == false){
+               //     Painel::alert('erro','O formato da imagem não é valida');
                 } else if (Usuario::userExists($user)){
                     Painel::alert('erro','O login ja esta em uso, selecione outro');
                 } else {

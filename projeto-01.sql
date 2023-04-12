@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 11, 2023 at 07:01 PM
+-- Generation Time: Apr 12, 2023 at 06:07 PM
 -- Server version: 8.0.31
 -- PHP Version: 7.4.33
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.online` (
   `ultima_acao` datetime NOT NULL,
   `token` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb3;
 
 -- --------------------------------------------------------
 
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.usuarios` (
   `nome` varchar(255) NOT NULL,
   `cargo` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `tb_admin.usuarios`
@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.usuarios` (
 
 INSERT INTO `tb_admin.usuarios` (`id`, `user`, `password`, `img`, `nome`, `cargo`) VALUES
 (1, 'admin', 'admin', 'avatar-nerd.jpg', 'Alex Sandro', 2),
+(5, 'lll', 'lll', '', 'lll', 0),
 (3, 'jose', 'jose', 'teste-avatar.jpg', 'Jose aluno', 0),
 (4, 'prof', 'prof', 'teste-avatar.jpg', 'Professor baitola', 1);
 
@@ -74,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.visitas` (
   `ip` varchar(255) NOT NULL,
   `dia` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `tb_admin.visitas`
@@ -86,7 +87,8 @@ INSERT INTO `tb_admin.visitas` (`id`, `ip`, `dia`) VALUES
 (3, '::1', '2023-04-04'),
 (4, '::1', '2023-04-04'),
 (5, '::1', '2023-04-05'),
-(6, '::1', '2023-04-05');
+(6, '::1', '2023-04-05'),
+(7, '::1', '2023-04-12');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

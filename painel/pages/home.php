@@ -44,7 +44,7 @@
 
 
 <div class="box-content left w100">
-    <h2><i class="fa fa-rocket" aria-hidden="true"></i> Usuários online</h2>
+    <h2><i class="fa fa-rocket" aria-hidden="true"></i> Usuários online no site</h2>
     <div class="table-responsive">
         <div class="row">
             <div class="col">
@@ -74,7 +74,45 @@
 
 </div><!-- box-content -->
      
+<div class="box-content left w100">
+    <h2><i class="fa fa-rocket" aria-hidden="true"></i> Usuários no painel</h2>
+    <div class="table-responsive">
+        <div class="row">
+            <div class="col">
+                <span>User</span>
+            </div><!-- col -->
+            <div class="col">
+                <span>Nome</span>
+            </div><!-- col -->
+            <div class="col">
+                <span>Cargo</span>
+            </div><!-- col -->
+            <div class="clear"></div><!-- clear -->
+        </div><!-- row -->
 
+    <?php
+        $usuariosPainel = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios`");
+        $usuariosPainel->execute();
+        $usuariosPainel = $usuariosPainel->fetchAll();
+        foreach ($usuariosPainel as $key => $value) {
+
+    ?>
+        <div class="row">
+            <div class="col">
+                <span><?php echo $value['user'] ?></span>
+            </div><!-- col -->
+            <div class="col">
+                <span><?php echo $value['nome'] ?></span>
+            </div><!-- col -->
+            <div class="col">
+                <span><?php echo pegaCargo($value['cargo']); ?></span>
+            </div><!-- col -->
+            <div class="clear"></div><!-- clear -->
+        </div><!-- row -->
+    <?php } ?>
+    </div><!-- table-responsive -->
+
+</div><!-- box-content -->
 
 
     <div class="box-content left w50">
