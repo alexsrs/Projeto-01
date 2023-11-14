@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 12, 2023 at 06:07 PM
+-- Generation Time: Nov 14, 2023 at 06:00 PM
 -- Server version: 8.0.31
 -- PHP Version: 7.4.33
 
@@ -34,7 +34,14 @@ CREATE TABLE IF NOT EXISTS `tb_admin.online` (
   `ultima_acao` datetime NOT NULL,
   `token` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `tb_admin.online`
+--
+
+INSERT INTO `tb_admin.online` (`id`, `ip`, `ultima_acao`, `token`) VALUES
+(25, '::1', '2023-11-14 15:00:02', '6553b5a2f09af');
 
 -- --------------------------------------------------------
 
@@ -51,17 +58,17 @@ CREATE TABLE IF NOT EXISTS `tb_admin.usuarios` (
   `nome` varchar(255) NOT NULL,
   `cargo` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `tb_admin.usuarios`
 --
 
 INSERT INTO `tb_admin.usuarios` (`id`, `user`, `password`, `img`, `nome`, `cargo`) VALUES
-(1, 'admin', 'admin', 'avatar-nerd.jpg', 'Alex Sandro', 2),
-(5, 'lll', 'lll', '', 'lll', 0),
-(3, 'jose', 'jose', 'teste-avatar.jpg', 'Jose aluno', 0),
-(4, 'prof', 'prof', 'teste-avatar.jpg', 'Professor baitola', 1);
+(1, 'admin', 'admin', '655387240a70f.jpg', 'Alex Sandro', 2),
+(6, 'alexsrs', 'crea1234', '6553aa2217cfe.jpg', 'Alex Sandro', 0),
+(3, 'jose', 'jose', '65538e3e42833.jpg', 'Jose aluno', 0),
+(4, 'prof', 'prof', '65538e7ea62a1.jpg', 'Professor baitola', 1);
 
 -- --------------------------------------------------------
 
@@ -75,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.visitas` (
   `ip` varchar(255) NOT NULL,
   `dia` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `tb_admin.visitas`
@@ -88,7 +95,11 @@ INSERT INTO `tb_admin.visitas` (`id`, `ip`, `dia`) VALUES
 (4, '::1', '2023-04-04'),
 (5, '::1', '2023-04-05'),
 (6, '::1', '2023-04-05'),
-(7, '::1', '2023-04-12');
+(7, '::1', '2023-04-12'),
+(8, '::1', '2023-07-05'),
+(9, '::1', '2023-07-26'),
+(10, '::1', '2023-11-08'),
+(11, '192.168.0.101', '2023-11-14');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
