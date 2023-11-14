@@ -15,6 +15,7 @@
             $password = $_POST['password'];
             $imagem = $_FILES['imagem'];
             $cargo = $_POST['cargo'];
+            // validar os campos antes de add
             if($user ==''){
                 Painel::alert('erro','O login esta vazio');
             } else if ($nome ==''){
@@ -23,12 +24,15 @@
                 Painel::alert('erro','A senha esta vazia');
             } else if ($cargo ==''){
                 Painel::alert('erro','O cargo precisa ser selecionado');
+            } else if($imagem['name'] == ''){
+                Painel::alert('erro','A imagem precisa estar selecionada');
+            
             } else {
                 // podemos cadastrar !
                 if($cargo >= $_SESSION['cargo']){
                     Painel::alert('erro','Você não pode cadastrar um usuario com permissões maiores que as suas');
-               // } else if(Painel::imagemValida($imagem) == false){
-               //     Painel::alert('erro','O formato da imagem não é valida');
+                } else if(Painel::imagemValida($imagem) == false){
+                    Painel::alert('erro','O formato da imagem não é valida');
                 } else if (Usuario::userExists($user)){
                     Painel::alert('erro','O login ja esta em uso, selecione outro');
                 } else {

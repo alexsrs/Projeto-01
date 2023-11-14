@@ -72,7 +72,7 @@
             $formatoArquivo = explode('.',$file['name']);
             $imagemNome = uniqid().'.'.$formatoArquivo[count($formatoArquivo) - 1];
             if(move_uploaded_file($file['tmp_name'],BASE_DIR_PAINEL.'/uploads/'.$imagemNome))
-                return $file['name'];
+                return $imagemNome;
             else 
                 return false;
         }

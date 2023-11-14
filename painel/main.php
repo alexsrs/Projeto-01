@@ -67,7 +67,7 @@
             </div><!-- menu-btn -->
 
             <div class="logout">
-                <a href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fa fa-home"></i><span>Página inicial</span></a>
+                <a <?php if(@$_GET['url'] == ''){ ?> style="background: #60727a; padding: 8px 15px;" <?php } ?> href="<?php echo INCLUDE_PATH_PAINEL ?>"><i class="fa fa-home"></i><span>Página inicial</span></a>
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>?logout"><i class="fa fa-window-close"></i><span>Sair</span></a>
             </div><!-- logout -->
             <div class="clear"></div><!-- clear -->
