@@ -47,6 +47,21 @@ body{
     border: 1px solid #CCC;
     padding-left: 8px;
     margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    }
+
+.box-content form textarea{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #CCC;
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    resize: vertical;
 }
 
 .box-login input[type=submit]{
@@ -304,6 +319,7 @@ div.box-usuario{
     font-weight: 300;
     color: black;
     display: block;
+    margin-top: 8px;
 }
 
 .box-content form input[type=text],
