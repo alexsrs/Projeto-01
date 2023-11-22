@@ -47,7 +47,7 @@
             <a <?php selecionadoMenu('cadastrar-servico'); ?>href="">Cadastrar serviço</a>
             <a <?php selecionadoMenu('cadastrar-slider'); ?>href="">Cadastrar slider</a>
             <h2>Gestão</h2>
-            <a <?php selecionadoMenu('listar-depoimentos'); ?>href="">Listar depoimentos</a>
+            <a <?php selecionadoMenu('listar-depoimentos'); ?>href="<?php echo INCLUDE_PATH_PAINEL ?>listar-depoimento">Listar depoimentos</a>
             <a <?php selecionadoMenu('listar-serviços'); ?>href="">Listar serviços</a>
             <a <?php selecionadoMenu('listar-slides'); ?>href="">Listar slides</a>
             <h2>Administração</h2>

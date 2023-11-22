@@ -5,6 +5,7 @@
 <html lang="pt-br">
 <head>
 	<title>Projeto 01 - PHP</title>
+	<link href="<?php echo INCLUDE_PATH; ?>css/all.css" rel="stylesheet">
 	<link href="<?php echo INCLUDE_PATH; ?>css/fontawesome.min.css" rel="stylesheet">
  	<link href="<?php echo INCLUDE_PATH; ?>css/brands.min.css" rel="stylesheet">
 	<link href="<?php echo INCLUDE_PATH; ?>css/solid.min.css" rel="stylesheet">

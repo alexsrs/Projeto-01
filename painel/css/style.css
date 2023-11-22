@@ -223,6 +223,35 @@ div.box-usuario{
     margin-bottom: 20px;
 }
 
+.box-metricas h2{
+    font-weight: 300;
+    font-size: 23px;
+}
+
+/* Tabelas */
+
+table{
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table tr:nth-of-type(1){
+    background: #0091ea;
+    color: white;
+}
+
+table tr{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+
+table td{
+    padding: 8px;
+}
+
+
 .items-menu{
     margin-top: 30px;
 }
