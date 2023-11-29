@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 21, 2023 at 06:43 PM
+-- Generation Time: Nov 29, 2023 at 03:15 PM
 -- Server version: 8.0.31
 -- PHP Version: 7.4.33
 
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.online` (
 --
 
 INSERT INTO `tb_admin.online` (`id`, `ip`, `ultima_acao`, `token`) VALUES
-(25, '::1', '2023-11-21 14:42:42', '6553b5a2f09af');
+(25, '::1', '2023-11-29 11:13:24', '6553b5a2f09af');
 
 -- --------------------------------------------------------
 
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `tb_admin.visitas` (
   `ip` varchar(255) NOT NULL,
   `dia` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `tb_admin.visitas`
@@ -100,7 +100,8 @@ INSERT INTO `tb_admin.visitas` (`id`, `ip`, `dia`) VALUES
 (9, '::1', '2023-07-26'),
 (10, '::1', '2023-11-08'),
 (11, '192.168.0.101', '2023-11-14'),
-(12, '::1', '2023-11-21');
+(12, '::1', '2023-11-21'),
+(13, '::1', '2023-11-29');
 
 -- --------------------------------------------------------
 
@@ -115,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `tb_site.depoimentos` (
   `depoimento` text NOT NULL,
   `data` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `tb_site.depoimentos`
@@ -123,7 +124,9 @@ CREATE TABLE IF NOT EXISTS `tb_site.depoimentos` (
 
 INSERT INTO `tb_site.depoimentos` (`id`, `nome`, `depoimento`, `data`) VALUES
 (1, 'alex', 'testando inserção de depoimentos', ''),
-(2, 'jose', 'testando com data', '05/04/2023');
+(2, 'jose', 'testando com data', '05/04/2023'),
+(3, 'Testonildo', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '29/11/2023'),
+(4, 'Alex Sandro Ribeiro de souza', 'deixa pra lá', '27/11/2023');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
